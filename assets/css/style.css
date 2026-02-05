@@ -1,0 +1,26 @@
+/* Gradiente sutil para el fondo */
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* El círculo de color principal */
+#colorDisplay {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    transition: background-color 0.15s ease-in-out, transform 0.2s;
+}
+
+/* Efecto hover suave en el círculo */
+#colorDisplay:hover {
+    transform: scale(1.05);
+}
+
+/* Personalización de los sliders */
+.form-range::-webkit-slider-thumb {
+    transition: background 0.2s;
+}
+
+.form-range:active::-webkit-slider-thumb {
+    transform: scale(1.2);
+}
